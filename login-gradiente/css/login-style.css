@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: linear-gradient(30deg, #7A5CD6,#d1b4ff,#5492D6) fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+} 
+
+form {
+    background-color: #ffffff;
+    max-width: 70vw;
+    padding: 25px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px 5px #dcc6ff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5a585a;
+    font-size: .9em;
+    margin-bottom: 7px;
+}
+
+.input-fields {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.input-fields > input {
+    min-width: 30vw;
+    min-height: 40px;
+    margin: 6px auto;
+    padding: 7px;
+    padding-left: 15px;
+    border: 1px solid #c0abfd;
+    border-radius: 10px;
+}
+
+.input-fields > input::placeholder {
+    color: #a2a2a2;
+
+}
+
+.input-fields > input:focus {
+    outline: none;
+    border: 1px solid #d1b4ff;
+    box-shadow: 1px 0 5px 0 #d1b4ff;
+    background-color: #fbf8ff;
+}
+
+.button-submit {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: white;
+    letter-spacing: .1em;
+    min-width: 20vw;
+    height: 3vh;
+    margin: 15px auto 2px;
+    padding: 20px;
+    outline: none;
+    background: linear-gradient(45deg,#5492D6, #d1b4ff);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer
+}
+
+.button-submit:hover {
+    color: #e2d0ff;
+    padding: 30px 0;
+    box-shadow: 1px 0 10px 1px #d1b4ff;
+    transition: all 500ms ease-in;
+}
+
+.button-submit:focus {
+    border: 2px solid #9053e0;
+}
+
+.footer span {
+    color: #5a585a;
+    font-size: .9em;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.link-sign-in, .link-terms {
+    margin: 5px 4px;
+    text-decoration: none;
+    color: #c145ff;
+}
+
+.link-sign-in:hover, .link-terms:hover {
+    color: #c0abfd;
+}
+
+.social-field {
+    /* padding:.5rem; */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    cursor: pointer;
+}
+
+.social-field.linkedin, .social-field.github {
+    width: 30vw;
+    height: 45px;
+    margin: 7px 0;
+}
+
+.social-field.linkedin {
+    background: linear-gradient(10deg, #2990f0, #aad2fd);
+}
+
+.social-field.github {
+    background: linear-gradient(10deg, #a5a5a5, #c9c7c7);
+}
+
+.social-field.linkedin:hover {
+    box-shadow: 0 0 15px 5px #aad2fd;
+}
+
+.social-field.github:hover {
+    box-shadow: 0 0 15px 5px #dadada;
+}
+
+
+.social-icon {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social-field .social-icon i {
+    margin: 0 .5rem;
+    width: 20px;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+    form {
+        max-width: 50vw;
+        max-height: auto;
+        margin: auto;
+    }
+    .button-submit {
+        max-width: 30vw;
+        margin-bottom: 5px;
+    }
+    .input-fields input, .social-field, .social-field.linkedin, .social-field.github {
+        max-width: 40vw;
+    }  
+}
+
+/* Tablet landscape */ 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .button-submit {
+        min-width: 40vw;
+    }
+    .input-fields >input, .social-field.linkedin, .social-field.github {
+        min-width: 50vw;
+    }
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 581px) and (max-width: 768px) {
+    .button-submit {
+        min-width: 50vw;
+        margin-bottom: 5px;
+    }
+    .input-fields > input, .social-field.linkedin, .social-field.github {
+        min-width: 60vw;
+    }
+}
+
+/* Phone landscape */
+@media only screen and (min-width: 321px) and (max-width: 580px) {
+    form {
+        min-width: 80vw;
+        min-height: auto;
+        margin: 15px auto;
+        padding-top: 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .button-submit {
+        min-width: 50vw;
+        margin-bottom: 5px;
+    }
+    .input-fields > input, .social-field.linkedin, .social-field.github {
+        min-width: 70vw;
+    }
+}
+
+/* Typical Phone (Portrait) */
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: .9em;
+    }
+    form {
+        max-width: 90vw;
+        height: 90vh;
+        margin: auto;
+    }
+
+    span {
+        font-size: .9em;
+    }
+
+    .input-fields > input {
+        min-width: 80vw;
+        margin: 4px auto;
+    }
+
+    .button-submit {
+        min-width: 70vw;
+        margin-bottom: 5px;
+    }
+
+    .footer span {
+        margin: 2px auto 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-field.linkedin, .social-field.github {
+        min-width: 70vw;
+    }
+    .social-field {
+        margin-top: 3px;
+    }
+}
