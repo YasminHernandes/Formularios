@@ -1,6 +1,6 @@
 # Formulário simples usando HTML e CSS puro
 
-![]https://github.com/YasminHernandes/Formularios/blob/master/login-gradiente/screenshot/screenshot-page.jpeg?raw=true
+![](https://github.com/YasminHernandes/Formularios/blob/master/login-gradiente/screenshot/screenshot-page.jpeg?raw=true)
 
 A página acima foi desenvolvida com a finalidade de colocar em prática conhecimentos em HTML5 e, especialmente, CSS3.
 
